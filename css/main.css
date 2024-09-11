@@ -795,7 +795,7 @@ address {
 .xp-header {
   width: 100%;
   z-index: 9999;
-  padding: 35px 0;
+  padding: 15px 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -813,9 +813,14 @@ address {
   float: left;
 }
 .xp-logo a,
-.xp-logo a img {
+.xp-logo img {
   display: block;
 }
+
+.xp-logo img {
+  image-resolution: 100px;
+}
+
 .xp-navigationarea {
   float: right;
   padding: 7px 0 0;
@@ -1332,6 +1337,7 @@ address {
   line-height: inherit;
   list-style-type: none;
 }
+
 .xp-categories li + li {
   padding: 0 0 0 10px;
 }
@@ -1355,10 +1361,22 @@ address {
   width: 100%;
   float: left;
   color: #ffffff;
-  background: #ffffff00;
+  background: #000000;
   text-align: center;
   box-shadow: 0 0 10px 2px rgba(29, 161, 242, 0.3);
   border-radius: 5%;
+  position: relative;
+  z-index: 2;
+}
+.mostpopular {
+  position: absolute;
+  top: -7%;
+  left: 34%;
+  background-color: #1da1f2;
+  padding: 10px 5px;
+  border-radius: 15%;
+  color: #ffffff;
+  z-index: 1;
 }
 .xp-plan h4 {
   margin: 0;
@@ -1454,7 +1472,8 @@ address {
   content: url("../images/svg/info_icon.svg");
   font-family: sans-serif;
   font-weight: normal;
-  color: #0d244e;
+  color: #eaeef5;
+  fill: #1da1f2;
 }
 
 .help-tip:hover p {
